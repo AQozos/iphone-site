@@ -266,7 +266,6 @@ ul {
     font-size: 14px;
 }
 
-
 .btn__menu {
     display: none;
     width: 25px;
@@ -302,6 +301,72 @@ ul {
     width: 100%;
     height: 2px;
     background-color: #D0D0D1;
+}
+
+.footer {
+    background-color: #161617;
+    padding: 60px 0;
+    color: rgba(255, 255, 255, .56);
+}
+
+.footer .container {
+    max-width: 980px;
+    padding: 0;
+}
+
+.footer__info {
+    border-bottom: 1px solid rgba(255, 255, 255, .24);
+    padding-bottom: 21px;
+    margin-top: 37px;
+    margin-bottom: 18px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.footer__info a {
+    color: #2997FF;
+    text-decoration: underline;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.footer__nav {
+    margin-left: 30px;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__item {
+    color: rgba(255, 255, 255, .8);
+    position: relative;
+}
+
+.footer__item::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    left: -10px;
+    top: 3px;
+}
+
+.footer__item:first-child::before {
+    display: none;
+}
+
+.footer__region {
+    color: rgba(255, 255, 255, .8);
+    margin-left: auto;
 }
 
 
@@ -343,6 +408,22 @@ ul {
     }
 }
 
+@media (max-width: 820px) {
+    .footer__bottom {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .footer__nav {
+        margin-left: 0;
+    }
+
+    .footer__region {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 640px) {
     .section-main {
         min-height: 650px;
@@ -350,5 +431,16 @@ ul {
 
     .iphone__17 {
         background-image: url('../images/hero_iphone_17_pro_small.jpg');
+    }
+}
+
+@media (max-width: 450px) {
+    .footer__list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__item::before {
+        display: none;
     }
 }
