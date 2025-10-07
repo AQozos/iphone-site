@@ -29,8 +29,10 @@ iPhone Site — это одностраничный сайт-презентац�
 Так как проект статический, установка не требуется.  
 Запуск возможен напрямую:
 
-git clone https://github.com/AQozos/iphone-site.git \
-cd iphone-site 
+```bash
+git clone https://github.com/AQozos/iphone-site.git 
+cd iphone-site
+``` 
 ---
 Затем откройте файл index.html в браузере.
 Для локального сервера можно использовать Live Server (VSCode extension).
